@@ -10,10 +10,10 @@ describe Takeaway do
   end
   context "place_order" do
     context "minimum arguments test" do
-      it { is_expected.to respond_to(:place_order).with(3).argument}
+      it { is_expected.to respond_to(:place_order).with(2).argument}
     end
     context "non-minimum arguments test" do
-      it { is_expected.to respond_to(:place_order).with(5).argument}
+      it { is_expected.to respond_to(:place_order).with(4).argument}
     end
     context "other ordering tests" do
       it "places order of dishes" do

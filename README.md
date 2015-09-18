@@ -3,11 +3,12 @@ Takeaway Challenge
 
 This is a model of a takeaway which takes in a number of dishes and the price the customer expects it to costs. It then (given no errors like ordering items not on the menu and customer's quoted price being wrong) will send a text to the customer informing them when their order will be delivered.
 
-To use this code first clone the repo to your own machine. You will need to sign up to twilio and get your own account SID and token as well as your twilio phone number and the phone number you want the text sending to set them as the following environment variables
+To use this code first clone the repo to your own machine and run bundle to install all the needed gems. You will need to sign up to twilio and get your own account SID and token as well as your twilio phone number and the phone number you want the text sending to set them as the following environment variables
 * ENV["ACCOUNT_SID"]
 * ENV["AUTH_TOKEN"]
 * ENV["TWILIO_NUM"]
 * ENV["PHONE"]
+
 The rspec tests are set up in such a way that these environment variables are not needed and at the same time the texts are not sent.
 
 Task

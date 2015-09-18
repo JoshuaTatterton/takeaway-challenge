@@ -1,4 +1,5 @@
 require_relative "text"
+
 class Takeaway
 
   attr_reader :menu, :price, :order
@@ -25,7 +26,7 @@ class Takeaway
       fail "Apologies, we do not have #{item} on the menu." if !menu.include?(item)
       order << item 
     end
-    # Guard clause
+
     price_adder
   end
 
